@@ -1,0 +1,30 @@
+{
+  "name": "divgas",
+  "version": "0.0.1",
+  "description": "A JS library for dividend investors targetint Google Apps Script",
+  "main": "index.js",
+  "scripts": {
+    "gas": "webpack --config webpack.gas.js ",
+    "deploy": "npm run gas && cd dist && clasp push && clasp open --webapp"
+  },
+  "keywords": [],
+  "author": "Antonio J. Roa-Valverde",
+  "license": "GPL-2.0",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "babel-loader": "^8.0.5",
+    "copy-webpack-plugin": "^5.0.1",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "run-func": "^1.0.5"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.4.0",
+    "axios": "^0.20.0",
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "node-fetch": "^2.6.0",
+    "node-html-parser": "^1.2.20"
+  }
+}
