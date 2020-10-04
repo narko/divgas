@@ -13,8 +13,8 @@ A JS library for dividend investors targeting Google Apps Script
 ### Sample usage from a Google Sheets document
 Once the code has been deployed to your GAS project, you can use it from your Google Sheets document. The following functions are available to use:
 
-* `getNextDividend(id)`: This function scrapes Morningstar and retrieves dividend information for the given company identified by **id**. This id is an internal Morningstar id and you will need to find it out for any company of your interest. For example for $BATS, the id is "0P00007O1O", which can be extracted from the following URL: `http://tools.morningstar.es/es/stockreport/default.aspx?SecurityToken=0P00007O1O%5D3%5D0%5DE0WWE%24%24ALL`. You can use like this within a cell: `=getNextDividend("0P00007O1O")`.
-The function returns an array with the following elements:
+* `getNextDividend(id)`: This function scrapes Morningstar and retrieves dividend information for the given company identified by **id**. This id is an internal Morningstar id and you will need to find it out for any company of your interest. For example for $BATS, the id is "0P00007O1O", which can be extracted from the following URL: `http://tools.morningstar.es/es/stockreport/default.aspx?SecurityToken=0P00007O1O%5D3%5D0%5DE0WWE%24%24ALL`.
+You can use the function like this within a cell: `=getNextDividend("0P00007O1O")`. The function returns an array with the following elements:
     
     * ticker: the ticker of company, e.g., "BATS".
     * declarationDate: the declaration date of the last known dividend, e.g., "18/12/20". 
